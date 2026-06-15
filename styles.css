@@ -442,6 +442,8 @@ img {
   margin: 0 auto 42px;
   color: var(--soft-ink);
   font-size: 18px;
+  font-weight: 800;
+  line-height: 1.8;
 }
 
 .chef-copy {
@@ -878,7 +880,12 @@ footer a {
   }
 
   .line-copy {
+    order: 1;
     width: 100%;
+  }
+
+  .qr {
+    order: 2;
   }
 
   .line-title {
