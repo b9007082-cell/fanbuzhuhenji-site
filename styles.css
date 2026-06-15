@@ -337,17 +337,14 @@ img {
 }
 
 .line-box {
-  display: grid;
-  grid-template-columns: 122px minmax(0, auto) 122px;
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 28px;
 }
 
 .line-box::before {
-  content: "";
-  display: block;
-  width: 122px;
+  display: none;
 }
 
 .qr img {
@@ -379,11 +376,11 @@ img {
 }
 
 .line-box .qr {
-  grid-column: 3;
+  order: 2;
 }
 
 .line-copy {
-  grid-column: 2;
+  order: 1;
 }
 
 .photo-carousel {
