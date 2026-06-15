@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --ink: #111;
   --muted: #5d574f;
   --paper: #fbfaf7;
@@ -89,7 +89,7 @@ img {
 .hero {
   position: relative;
   min-height: 562px;
-  background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url("assets/hero.jpg") center center / cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url("/assets/hero.jpg") center center / cover no-repeat;
 }
 
 .hero-caption,
@@ -113,19 +113,19 @@ img {
 }
 
 .menu-page-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04)), url("assets/menu-hero.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04)), url("/assets/menu-hero.jpg");
   background-position: 100% 52%;
 }
 
 .about-page-hero {
   min-height: 505px;
-  background-image: url("assets/about-hero.jpg");
+  background-image: url("/assets/about-hero.jpg");
   background-position: 50% 39%;
 }
 
 .contact-page-hero {
   min-height: 505px;
-  background-image: url("assets/contact-hero.jpg");
+  background-image: url("/assets/contact-hero.jpg");
   background-position: 100% 11%;
 }
 
@@ -145,7 +145,7 @@ img {
   display: grid;
   min-height: 170px;
   place-items: center;
-  background: url("assets/paper-bg.png") center center / cover no-repeat;
+  background: url("/assets/paper-bg.png") center center / cover no-repeat;
 }
 
 .logo-band img {
@@ -154,7 +154,7 @@ img {
 
 .section {
   padding: 78px 24px;
-  background: url("assets/paper-bg.png") center center / cover no-repeat;
+  background: url("/assets/paper-bg.png") center center / cover no-repeat;
 }
 
 .wrap {
@@ -230,22 +230,22 @@ img {
 
 .menu {
   text-align: center;
-  background: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url("assets/menu-bg.jpg") center center / cover fixed no-repeat;
+  background: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url("/assets/menu-bg.jpg") center center / cover fixed no-repeat;
 }
 
 .menu-page {
   text-align: center;
-  background: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url("assets/menu-bg.jpg") center center / cover fixed no-repeat;
+  background: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url("/assets/menu-bg.jpg") center center / cover fixed no-repeat;
 }
 
 .about-page {
   text-align: center;
-  background: url("assets/paper-bg.png") center center / cover fixed no-repeat;
+  background: url("/assets/paper-bg.png") center center / cover fixed no-repeat;
 }
 
 .contact-page {
   text-align: center;
-  background: linear-gradient(rgba(255, 255, 255, 0.86), rgba(255, 255, 255, 0.86)), url("assets/contact-bg.jpg") center center / cover fixed no-repeat;
+  background: linear-gradient(rgba(255, 255, 255, 0.86), rgba(255, 255, 255, 0.86)), url("/assets/contact-bg.jpg") center center / cover fixed no-repeat;
 }
 
 .menu .section-title {
@@ -427,7 +427,7 @@ img {
 
 .contact {
   text-align: center;
-  background: linear-gradient(rgba(255, 255, 255, 0.86), rgba(255, 255, 255, 0.86)), url("assets/contact-bg.jpg") center center / cover fixed no-repeat;
+  background: linear-gradient(rgba(255, 255, 255, 0.86), rgba(255, 255, 255, 0.86)), url("/assets/contact-bg.jpg") center center / cover fixed no-repeat;
 }
 
 .contact .section-title {
@@ -629,3 +629,4 @@ footer a {
     font-size: 16px;
   }
 }
+
