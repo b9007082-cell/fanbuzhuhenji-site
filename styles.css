@@ -113,6 +113,7 @@ img {
   background-image:
     linear-gradient(90deg, rgba(18, 13, 8, 0.72), rgba(18, 13, 8, 0.22) 56%, rgba(18, 13, 8, 0.08)),
     url("/assets/hero.jpg");
+  background-position: 50% 69%;
 }
 
 .page-hero {
@@ -123,21 +124,21 @@ img {
   background-image:
     linear-gradient(90deg, rgba(18, 13, 8, 0.68), rgba(18, 13, 8, 0.16)),
     url("/assets/menu-hero.jpg");
-  background-position: 100% 52%;
+  background-position: 100% 52.18%;
 }
 
 .about-hero {
   background-image:
     linear-gradient(90deg, rgba(255, 250, 242, 0.72), rgba(255, 250, 242, 0.12)),
     url("/assets/about-hero.jpg");
-  background-position: center 39%;
+  background-position: 50% 38.89%;
 }
 
 .contact-hero {
   background-image:
     linear-gradient(90deg, rgba(18, 13, 8, 0.68), rgba(18, 13, 8, 0.12)),
     url("/assets/contact-hero.jpg");
-  background-position: 100% 11%;
+  background-position: 100% 11.16%;
 }
 
 .hero-content {
@@ -270,6 +271,12 @@ img {
   margin-left: 0;
 }
 
+.intro-mark {
+  width: min(330px, 78vw);
+  margin: 0 0 28px;
+  filter: brightness(1.12) contrast(1.04);
+}
+
 .copy,
 .about-text,
 .contact-details {
@@ -328,6 +335,10 @@ img {
   margin: 0 0 8px;
   font-size: clamp(28px, 4vw, 42px);
   line-height: 1.15;
+}
+
+.line-title {
+  margin: 0 0 16px;
 }
 
 .line-copy p {
@@ -457,6 +468,11 @@ img {
   margin-bottom: 42px;
 }
 
+.home-gallery {
+  max-width: 1020px;
+  margin-inline: auto;
+}
+
 .gallery a {
   display: block;
   background: #fff;
@@ -474,6 +490,7 @@ img {
   width: 100%;
   aspect-ratio: 800 / 585;
   object-fit: cover;
+  object-position: center;
 }
 
 .gallery span {
@@ -761,19 +778,19 @@ footer a {
     background-image:
       linear-gradient(rgba(18, 13, 8, 0.42), rgba(18, 13, 8, 0.72)),
       url("/assets/hero.jpg");
-    background-position: 34% center;
+    background-position: 50% 69%;
   }
 
   .menu-hero {
-    background-position: 72% center;
+    background-position: 100% 52.18%;
   }
 
   .about-hero {
-    background-position: center;
+    background-position: 50% 38.89%;
   }
 
   .contact-hero {
-    background-position: 76% center;
+    background-position: 100% 11.16%;
   }
 
   .hero-content {
