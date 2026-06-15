@@ -337,11 +337,9 @@ img {
 }
 
 .line-box {
-  position: relative;
-  display: block;
+  display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 180px;
 }
 
 .line-box::before {
@@ -360,7 +358,7 @@ img {
 }
 
 .line-title {
-  margin: 0 auto 16px;
+  margin: 0 auto;
 }
 
 .line-copy p {
@@ -372,17 +370,14 @@ img {
 }
 
 .line-copy {
-  width: min(720px, 100%);
-  margin: 0 auto;
+  width: auto;
+  margin: 0;
   min-width: 0;
   text-align: center;
 }
 
 .line-box .qr {
-  position: absolute;
-  top: 50%;
-  left: calc(50% + 240px);
-  transform: translateY(-50%);
+  order: 2;
 }
 
 .line-copy {
@@ -828,7 +823,7 @@ footer a {
   }
 
   .menu-hero {
-    background-position: center, center top;
+    background-position: center, center 58px;
     background-size: cover, contain;
     background-repeat: no-repeat;
     background-color: #d8d6d0;
@@ -902,8 +897,6 @@ footer a {
   }
 
   .line-box {
-    position: static;
-    min-height: 0;
     gap: 20px;
     align-items: center;
   }
@@ -913,13 +906,8 @@ footer a {
     width: 100%;
   }
 
-  .qr {
-    order: 2;
-  }
-
   .line-box .qr {
-    position: static;
-    transform: none;
+    order: 2;
   }
 
   .line-title {
