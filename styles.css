@@ -155,6 +155,10 @@ img {
   width: min(520px, 100%);
 }
 
+.home-hero .hero-content {
+  width: min(760px, 100%);
+}
+
 .eyebrow {
   margin: 0 0 18px;
   color: var(--gold);
@@ -185,8 +189,19 @@ img {
   color: rgba(255, 255, 255, 0.9);
 }
 
+.home-hero .hero-copy {
+  width: min(760px, 100%);
+}
+
 .light .hero-copy {
   color: var(--soft-ink);
+}
+
+@media (min-width: 821px) {
+  .home-hero h1,
+  .home-hero .hero-copy {
+    white-space: nowrap;
+  }
 }
 
 .hero-actions {
@@ -345,6 +360,10 @@ img {
   margin: 0;
   color: var(--soft-ink);
   font-size: 18px;
+}
+
+.line-copy {
+  min-width: 0;
 }
 
 .photo-carousel {
@@ -845,6 +864,37 @@ footer a {
   .contact-strip-inner {
     flex-direction: column;
     text-align: center;
+  }
+
+  .line-box {
+    gap: 20px;
+    align-items: center;
+  }
+
+  .line-copy {
+    width: 100%;
+  }
+
+  .line-title {
+    height: 34px;
+    max-width: 86vw;
+    margin: 0 auto 14px;
+  }
+
+  .line-copy h2 {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+
+  .line-copy p {
+    max-width: 18em;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .qr img {
+    width: 108px;
   }
 
   .socials.left {
