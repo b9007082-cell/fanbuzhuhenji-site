@@ -337,10 +337,11 @@ img {
 }
 
 .line-box {
-  display: flex;
+  position: relative;
+  display: block;
   align-items: center;
   justify-content: center;
-  gap: 28px;
+  min-height: 180px;
 }
 
 .line-box::before {
@@ -371,12 +372,17 @@ img {
 }
 
 .line-copy {
+  width: min(720px, 100%);
+  margin: 0 auto;
   min-width: 0;
   text-align: center;
 }
 
 .line-box .qr {
-  order: 2;
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 240px);
+  transform: translateY(-50%);
 }
 
 .line-copy {
@@ -893,6 +899,8 @@ footer a {
   }
 
   .line-box {
+    position: static;
+    min-height: 0;
     gap: 20px;
     align-items: center;
   }
@@ -904,6 +912,11 @@ footer a {
 
   .qr {
     order: 2;
+  }
+
+  .line-box .qr {
+    position: static;
+    transform: none;
   }
 
   .line-title {
