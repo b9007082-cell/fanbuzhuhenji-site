@@ -166,7 +166,7 @@ img {
 .hero-mark {
   width: min(310px, 72vw);
   margin: 0 0 18px;
-  filter: drop-shadow(0 4px 16px rgba(0, 0, 0, 0.28));
+  filter: brightness(1.18) contrast(1.04) drop-shadow(0 3px 10px rgba(0, 0, 0, 0.16));
 }
 
 .hero h1 {
