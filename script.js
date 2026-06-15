@@ -42,3 +42,30 @@ document.addEventListener("keydown", (event) => {
     closeLightbox();
   }
 });
+
+document.querySelectorAll("[data-carousel]").forEach((carousel) => {
+  const images = Array.from(carousel.querySelectorAll(".carousel-track img"));
+  const dots = carousel.querySelector(".carousel-dots");
+  let index = 0;
+
+  if (images.length < 2 || !dots) return;
+
+  images.forEach((_, dotIndex) => {
+    const dot = document.createElement("span");
+    if (dotIndex === 0) dot.classList.add("active");
+    dots.appendChild(dot);
+  });
+
+  const dotItems = Array.from(dots.children);
+  const show = (nextIndex) => {
+    images[index].classList.remove("active");
+    dotItems[index].classList.remove("active");
+    index = nextIndex;
+    images[index].classList.add("active");
+    dotItems[index].classList.add("active");
+  };
+
+  window.setInterval(() => {
+    show((index + 1) % images.length);
+  }, 3600);
+});
