@@ -338,10 +338,10 @@ img {
 
 .line-box {
   display: grid;
-  grid-template-columns: 122px minmax(0, 720px) 122px;
+  grid-template-columns: 122px minmax(0, auto) 122px;
   align-items: center;
   justify-content: center;
-  gap: 32px;
+  gap: 28px;
 }
 
 .line-box::before {
