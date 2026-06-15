@@ -337,10 +337,17 @@ img {
 }
 
 .line-box {
-  display: flex;
+  display: grid;
+  grid-template-columns: 122px minmax(0, 720px) 122px;
   align-items: center;
   justify-content: center;
   gap: 32px;
+}
+
+.line-box::after {
+  content: "";
+  display: block;
+  width: 122px;
 }
 
 .qr img {
@@ -355,7 +362,7 @@ img {
 }
 
 .line-title {
-  margin: 0 0 16px;
+  margin: 0 auto 16px;
 }
 
 .line-copy p {
@@ -870,8 +877,13 @@ footer a {
 
   .line-box,
   .contact-strip-inner {
+    display: flex;
     flex-direction: column;
     text-align: center;
+  }
+
+  .line-box::after {
+    display: none;
   }
 
   .line-box {
