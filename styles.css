@@ -410,6 +410,32 @@ img {
   font-size: 18px;
 }
 
+.menu-jump {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin: -18px auto 38px;
+}
+
+.menu-jump a {
+  display: inline-flex;
+  min-width: 142px;
+  min-height: 46px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--accent);
+  background: #fff;
+  color: var(--accent);
+  font-weight: 900;
+  box-shadow: 0 10px 24px rgba(44, 31, 19, 0.1);
+}
+
+.menu-jump a:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -455,6 +481,7 @@ img {
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   margin: 0 auto 64px;
+  scroll-margin-top: 96px;
 }
 
 .dish-card {
@@ -544,6 +571,7 @@ img {
 .full-menu-block {
   width: min(760px, 100%);
   margin: 0 auto;
+  scroll-margin-top: 96px;
 }
 
 .full-menu-block h2 {
