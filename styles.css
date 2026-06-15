@@ -610,54 +610,6 @@ img {
   margin: 0 0 28px;
 }
 
-.about-kicker {
-  display: inline-flex;
-  margin-bottom: 12px;
-  padding: 6px 12px;
-  background: rgba(181, 73, 47, 0.1);
-  color: var(--accent);
-  font-size: 14px;
-  font-weight: 900;
-}
-
-.about-text h2 {
-  margin: 0 0 18px;
-  color: var(--ink);
-  font-size: clamp(30px, 4vw, 46px);
-  line-height: 1.16;
-}
-
-.about-points {
-  display: grid;
-  gap: 12px;
-  margin: 26px 0;
-}
-
-.about-points div {
-  display: grid;
-  gap: 4px;
-  padding: 16px 18px;
-  border-left: 4px solid var(--accent);
-  background: rgba(255, 255, 255, 0.72);
-  box-shadow: 0 10px 24px rgba(44, 31, 19, 0.08);
-}
-
-.about-points strong {
-  color: var(--ink);
-  font-size: 18px;
-}
-
-.about-points span {
-  color: var(--soft-ink);
-  font-size: 16px;
-  line-height: 1.65;
-}
-
-.about-note {
-  color: var(--ink);
-  font-weight: 900;
-}
-
 .contact-strip,
 .contact-page {
   background:
@@ -861,10 +813,6 @@ footer a {
 
   .chef-copy {
     font-size: 16px;
-  }
-
-  .about-points div {
-    text-align: left;
   }
 
   .carousel-track,
