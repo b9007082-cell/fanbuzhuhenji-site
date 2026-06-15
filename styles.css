@@ -450,6 +450,55 @@ img {
   text-align: left;
 }
 
+.dish-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin: 0 auto 64px;
+}
+
+.dish-card {
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  min-height: 100%;
+  background: #fff;
+  box-shadow: 0 12px 34px rgba(44, 31, 19, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dish-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+.dish-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.dish-card span {
+  display: grid;
+  min-height: 54px;
+  place-items: center;
+  padding: 14px 16px 6px;
+  color: var(--ink);
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.dish-card p {
+  margin: 0;
+  padding: 0 18px 20px;
+  color: var(--soft-ink);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.65;
+  text-align: center;
+}
+
 .menu-item {
   background: rgba(255, 255, 255, 0.82);
   box-shadow: 0 12px 34px rgba(44, 31, 19, 0.12);
@@ -495,6 +544,12 @@ img {
 .full-menu-block {
   width: min(760px, 100%);
   margin: 0 auto;
+}
+
+.full-menu-block h2 {
+  margin: 0 0 22px;
+  font-size: clamp(30px, 5vw, 48px);
+  line-height: 1.1;
 }
 
 .full-menu-block p {
@@ -689,6 +744,7 @@ footer a {
   .contact-layout,
   .gallery,
   .menu-items,
+  .dish-grid,
   .photo-wall {
     grid-template-columns: 1fr;
   }
