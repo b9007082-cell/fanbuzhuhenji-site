@@ -344,7 +344,7 @@ img {
   gap: 32px;
 }
 
-.line-box::after {
+.line-box::before {
   content: "";
   display: block;
   width: 122px;
@@ -375,6 +375,15 @@ img {
 
 .line-copy {
   min-width: 0;
+  text-align: center;
+}
+
+.line-box .qr {
+  grid-column: 3;
+}
+
+.line-copy {
+  grid-column: 2;
 }
 
 .photo-carousel {
@@ -882,7 +891,7 @@ footer a {
     text-align: center;
   }
 
-  .line-box::after {
+  .line-box::before {
     display: none;
   }
 
