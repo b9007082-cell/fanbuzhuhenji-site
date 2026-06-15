@@ -828,7 +828,10 @@ footer a {
   }
 
   .menu-hero {
-    background-position: 100% 52.18%;
+    background-position: center, center top;
+    background-size: cover, contain;
+    background-repeat: no-repeat;
+    background-color: #d8d6d0;
   }
 
   .about-hero {
